@@ -1,0 +1,20 @@
+.App {
+  text-align: center;
+}
+
+input {
+  border-radius: 10px;
+  border-color: blue;
+  margin : 20px;
+  padding : 10px;
+}
+button {
+  border : 1px solid transparent;
+  border-radius : 20px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 2rem;
+  color : red;
+  font-weight: 500;
+  transition: border-color .25s;
+}
