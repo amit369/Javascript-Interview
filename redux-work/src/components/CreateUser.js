@@ -6,7 +6,7 @@ const CreateUser = () => {
     const [email,setEmail] = useState();
     const [password,setPassword] = useState();
     const [address, setAddress] = useState();
-
+    const  [dataa, setData] = useState();
     const handleSubmit = e => {
         e.preventDefault();
         const data = {
@@ -17,6 +17,8 @@ const CreateUser = () => {
             address
         }
         console.log(data);
+        localStorage.setItem('data',data);
+        setData(data);
     }
   return (
     <div>
@@ -35,6 +37,12 @@ const CreateUser = () => {
        <br/>
       <button type="submit">Submit </button>
       </form>
+      {dataa? dataa.map((item) => {
+         return <p>item</p>
+      }) : ""
+              
+    }
+
     </div>
   );
 };
